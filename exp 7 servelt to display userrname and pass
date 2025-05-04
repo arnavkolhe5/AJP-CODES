@@ -1,13 +1,14 @@
 Validation.java:
 import java.io.IOException;
 import java.io.PrintWriter;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/LoginServlet")
+@WebServlet("/Validation")
 public class Validation extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
@@ -41,7 +42,7 @@ index.html:
 </head>
 <body>
    <h2>Login Page</h2>
-    <form action="LoginServlet" method="post">
+    <form action="Validation" method="post">
         Username: <input type="text" name="username" /><br><br>
         Password: <input type="password" name="password" /><br><br>
         <input type="submit" value="Login" />
